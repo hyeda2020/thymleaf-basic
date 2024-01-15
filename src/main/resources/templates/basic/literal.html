@@ -7,12 +7,13 @@
 <body>
 <h1>리터럴</h1>
 <ul>
+  <!-- 문자 리터럴은 원칙상 '(Single Quotation)으로 감싸야 하며, 중간에 공백이 있으면 하나의 의미있는 토큰으로도 인식되지 않음 -->
   <!--주의! 다음 주석을 풀면 예외가 발생함-->
   <!-- <li>"hello world!" = <span th:text="hello world!"></span></li>-->
   <li>'hello' + ' world!' = <span th:text="'hello' + ' world!'"></span></li>
   <li>'hello world!' = <span th:text="'hello world!'"></span></li>
   <li>'hello ' + ${data} = <span th:text="'hello ' + ${data}"></span></li>
-  <li>리터럴 대체 |hello ${data}| = <span th:text="|hello ${data}|"></span></li>
+  <li>리터럴 대체 |hello ${data}| = <span th:text="|hello ${data}|"></span></li> <!-- 리터럴 대체 : 마지막의 리터럴 대체 문법(|)을 사용하면 마치 템플릿을 사용하는 것 처럼 편리 -->
 </ul>
 </body>
 </html>

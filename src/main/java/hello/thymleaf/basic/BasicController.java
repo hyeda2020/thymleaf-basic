@@ -95,7 +95,7 @@ public class BasicController {
     }
 
     /**
-     * 타임리프에서 리터럴 문자 사용
+     * 타임리프에서 리터럴 문자(소스 코드상에 고정된 값) 사용
      */
     @GetMapping("/literal")
     public String literal(Model model) {
